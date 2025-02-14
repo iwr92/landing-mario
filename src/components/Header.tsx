@@ -54,15 +54,19 @@ const Menu = () => {
                   key={item.name}
                   to={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
+                  style={{ cursor: 'pointer' }}
                 >
                   {item.name}
                 </Link>
               ))}
               <a
                 href="#"
-                className={`font-medium text-primary hover:text-secondary`}
+                className={`font-medium text-base hover:text-[#4a759f]`}
+                style={{
+                  fontWeight: 'bold',
+                }}
               >
-                Call to action
+                Contactar
               </a>
             </div>
           </nav>

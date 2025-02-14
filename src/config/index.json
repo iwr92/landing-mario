@@ -1,38 +1,38 @@
 {
   "company": {
     "name": "React landing page 2021",
-    "logo": "/assets/images/logo.png"
+    "logo": "/assets/images/3.png"
   },
   "navigation": [
     {
-      "name": "Product",
+      "name": "Inicio",
       "href": "product"
     },
     {
-      "name": "Features",
+      "name": "Servicio",
       "href": "features"
     },
 
     {
-      "name": "Pricing",
+      "name": "Contacto",
       "href": "pricing"
     },
     {
-      "name": "About",
+      "name": "Sobre mi",
       "href": "about"
     }
   ],
   "callToAction": {
-    "text": "Get started",
+    "text": "Contactar",
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "img": "/assets/images/happyTeam.jpeg",
+    "title": "Tu espacio, nuestra calidad",
+    "subtitle": "en aberturas.",
+    "description": "Instalamos puertas, ventanas y mamparas con la precisión y calidad que tu hogar o proyecto necesitan. Trabajamos con vidrio, aluminio y PVC para ofrecerte soluciones seguras, duraderas y estéticas. Confía en expertos que cuidan cada detalle para brindarte el mejor resultado.",
+    "img": "/assets/images/AberturaOne.webp",
     "primaryAction": {
-      "text": "Get started",
+      "text": "Contacto",
       "href": "#"
     },
     "secondaryAction": {

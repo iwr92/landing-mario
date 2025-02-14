@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 
-:root {
-  --color-primary: #ec4755;
+/* :root {
+  --color-primary: rgb(44, 62, 80);
   --color-secondary: #a12c34;
   --color-tertiaty: #99a0a3;
-}
+} */
 
-a { 
+/* a { 
   @apply text-red-700;
 }
 
@@ -26,3 +26,4 @@ a:hover {
 .content ul {
   @apply my-6;
 }
+ */
