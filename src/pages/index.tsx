@@ -1,31 +1,43 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
 
-import About from '../components/About';
-import Analytics from '../components/Analytics';
-import Canvas from '../components/Canvas';
-import Features from '../components/Features';
-import Header from '../components/Header';
-import LazyShow from '../components/LazyShow';
-import MainHero from '../components/MainHero';
-import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
-import Product from '../components/Product';
+import About from "../components/About";
+import Analytics from "../components/Analytics";
+import Canvas from "../components/Canvas";
+import Features from "../components/Features";
+import Header from "../components/Header";
+import LazyShow from "../components/LazyShow";
+import MainHero from "../components/MainHero";
+import MainHeroImage from "../components/MainHeroImage";
+import Pricing from "../components/Pricing";
+import Product from "../components/Product";
+import ContactSection from "../components/ContactSection";
+
+const fadeIn = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+};
 
 const App = () => {
   return (
-    <div className={`bg-background grid gap-y-16 overflow-hidden`}>
-      <div className={`relative bg-background`}>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeIn}
+      className="bg-background grid gap-y-16 overflow-hidden"
+    >
+      <motion.div variants={fadeIn} className="relative bg-background">
         <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-          >
+          <motion.div variants={fadeIn} className="relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <Header />
             <MainHero />
-          </div>
+          </motion.div>
         </div>
         <MainHeroImage />
-      </div>
+      </motion.div>
+      
       <Canvas />
+      
       <LazyShow>
         <>
           <Product />
@@ -44,11 +56,12 @@ const App = () => {
       <LazyShow>
         <>
           <Canvas />
+          <ContactSection />
           <About />
         </>
       </LazyShow>
       <Analytics />
-    </div>
+    </motion.div>
   );
 };
 
