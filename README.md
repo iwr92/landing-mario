@@ -32,7 +32,7 @@ Built-in feature from Next.js:
 #### 1. Clone repo
 
 ```
-git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
+git clone https://github.com/iwr92/landing-mario.git
 cd react-landing-page-template-2021
 yarn
 ```
