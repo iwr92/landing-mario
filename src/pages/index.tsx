@@ -51,16 +51,16 @@ const App = () => {
         </>
       </LazyShow>
       <LazyShow>
-        <Pricing />
+        {/* <Pricing /> */}
+        <ContactSection />
       </LazyShow>
       <LazyShow>
         <>
           <Canvas />
-          <ContactSection />
           <About />
         </>
       </LazyShow>
-      <Analytics />
+      {/* <Analytics /> */}
     </motion.div>
   );
 };

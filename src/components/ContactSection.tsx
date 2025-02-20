@@ -59,8 +59,8 @@ export default function ContactSection() {
   
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-2xl">
-      <h2 className="text-2xl font-bold mb-4 text-center">Contacto</h2>
+    <div className="max-w-xl mx-auto p-6 bg-white shadow-lg rounded-2xl">
+      <h2 className="text-5xl font-bold mb-7 text-center">Contacto</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input 
           type="text" 
@@ -69,6 +69,7 @@ export default function ContactSection() {
           value={formData.name} 
           onChange={handleChange} 
           required 
+          autoComplete='off'
           className="w-full p-2 border border-gray-300 rounded-md"
         />
         <input 
@@ -78,6 +79,7 @@ export default function ContactSection() {
           value={formData.email} 
           onChange={handleChange} 
           required 
+          autoComplete='off'
           className="w-full p-2 border border-gray-300 rounded-md"
         />
         <textarea 
@@ -86,12 +88,13 @@ export default function ContactSection() {
           value={formData.message} 
           onChange={handleChange} 
           required 
+          autoComplete='off'
           className="w-full p-2 border border-gray-300 rounded-md"
         ></textarea>
         <button 
           type="submit" 
           disabled={loading} 
-          className="w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 disabled:bg-gray-400"
+          className="w-full p-2 bg-[#4a759f] text-white rounded-md hover:bg-[#5a8ec2] disabled:bg-gray-400"
         >
           {loading ? 'Enviando...' : 'Enviar'}
         </button>

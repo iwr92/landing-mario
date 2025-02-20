@@ -40,13 +40,14 @@ const Menu = () => {
                 smooth={true}
                 duration={1000}
                 className="text-gray-500 hover:text-gray-900 cursor-pointer"
+                style={ item.name === 'Contacto' && {fontWeight:'bold', color:'#4a759f'}}
               >
                 {item.name}
               </Link>
             ))}
-            <a href={callToAction.href} className="text-[#4a759f] font-bold hover:text-[#2C3E50]">
+            {/* <a href={callToAction.href} className="text-[#4a759f] font-bold hover:text-[#2C3E50]">
               {callToAction.text}
-            </a>
+            </a> */}
           </nav>
         </div>
       </div>
@@ -66,16 +67,17 @@ const Menu = () => {
                 duration={1000}
                 className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
+                style={ item.name === 'Contacto' && {fontWeight:'bold', color:'#4a759f'}}
               >
                 {item.name}
               </Link>
             ))}
-            <a
+            {/* <a
               href={callToAction.href}
               className="block w-full px-5 py-3 text-center font-medium text-[#4a759f] bg-gray-50 hover:bg-gray-100"
             >
               {callToAction.text}
-            </a>
+            </a> */}
           </div>
         </div>
       )}

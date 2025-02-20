@@ -6,25 +6,24 @@
   "navigation": [
     {
       "name": "Inicio",
+      "href": "#"
+    },
+    {
+      "name": "Servicios",
       "href": "product"
     },
     {
-      "name": "Servicio",
+      "name": "Sobre mi",
       "href": "features"
     },
-
     {
       "name": "Contacto",
-      "href": "pricing"
-    },
-    {
-      "name": "Sobre mi",
       "href": "about"
     }
   ],
   "callToAction": {
     "text": "Contacto",
-    "href": "#"
+    "href": "pricing"
   },
   "mainHero": {
     "title": "Tu espacio, nuestra calidad",
@@ -44,48 +43,28 @@
     "title": "Servicios",
     "items": [
       {
-        "title": "A plug n play template",
-        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "title": "Instalación Profesional de Aberturas",
+        "description": "Instalación profesional de aberturas en aluminio, PVC y vidrio. Precisión, calidad y garantía para tu hogar o proyecto.",
         "img": "/assets/images/1.webp"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Asesoramiento Personalizado",
+        "description": "Te ayudamos a elegir las aberturas ideales para tu proyecto, considerando diseño, eficiencia energética, seguridad y materiales de alta calidad. Brindamos soluciones a medida según tus necesidades, optimizando funcionalidad y estética. Confía en nuestra experiencia para tomar la mejor decisión.",
         "img": "/assets/images/2.webp"
       },
       {
-        "title": "Make it your own!",
-        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "title": "Presupuesto sin cargo a medida",
+        "description": "Solicitá tu presupuesto sin compromiso. Tomamos medidas exactas y te brindamos la mejor solución en aberturas según tu espacio y necesidades. Calidad, precisión y asesoramiento profesional.",
         "img": "/assets/images/presup.webp"
       }
     ]
   },
+
   "features": {
-    "title": "Latest & greatest ",
-    "subtitle": "All the best technologies out there!",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "items": [
-      {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "icon": "/assets/images/react.png"
-      },
-      {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
-        "icon": "/assets/images/tailwindcss.svg"
-      },
-      {
-        "name": "Next.js",
-        "description": "Next.js is a framework for server-rendered React applications using Next.js.",
-        "icon": "/assets/images/nextjs.svg"
-      },
-      {
-        "name": "Typescript",
-        "description": "TypeScript is a programming language developed and maintained by Microsoft.",
-        "icon": "/assets/images/ts.png"
-      }
-    ]
+    "title": "",
+    "subtitle": "Sobre mi",
+    "description": "Con más de una década de trayectoria en el mercado, me especializo en la instalación de todo tipo de aberturas, incluyendo puertas, ventanas, mamparas y cerramientos en vidrio, aluminio y PVC. Mi compromiso con la calidad, la precisión y la satisfacción del cliente me ha permitido consolidar una reputación sólida en el sector. Cada proyecto es una oportunidad para aportar soluciones eficientes, estéticas y duraderas, adaptadas a las necesidades específicas de cada cliente. Con un enfoque detallista y el uso de materiales de primera línea, garantizo instalaciones seguras, funcionales y de alto rendimiento. Si buscas un profesional confiable para la instalación de aberturas en tu hogar, oficina o edificio, puedes contar con mi experiencia y dedicación para ofrecerte un trabajo impecable.",
+    "img": "/assets/images/vistasobremi.webp"
   },
   "pricing": {
     "title": "Pricing",
