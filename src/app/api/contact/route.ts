@@ -8,7 +8,13 @@ export async function POST(req: Request) {
     const { name, email, message } = await req.json();
 
     // 🔹 Responde inmediatamente al cliente
-    const response = NextResponse.json({ success: true }, { status: 200 });
+    // const response = NextResponse.json({ success: true }, { status: 200 });
+
+    const response = new NextResponse(JSON.stringify({ success: true }), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+    
 
     // 🔹 Luego, envía el correo en segundo plano
     resend.emails
