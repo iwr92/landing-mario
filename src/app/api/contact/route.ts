@@ -13,7 +13,6 @@ export async function POST(req: Request) {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
-    
 
     // 🔹 Luego, envía el correo en segundo plano
     resend.emails
@@ -29,9 +28,15 @@ export async function POST(req: Request) {
 
     return response;
   } catch (error) {
-    return new NextResponse(JSON.stringify({ success: false, error: 'Error al procesar la solicitud' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    });
+    return new NextResponse(
+      JSON.stringify({
+        success: false,
+        error: 'Error al procesar la solicitud',
+      }),
+      {
+        status: 500,
+        headers: { 'Content-Type': 'application/json' },
+      }
+    );
   }
 }

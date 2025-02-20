@@ -6,7 +6,7 @@ This is a React.js/Next.js based landing page plug-n-play template, ideal for st
 
 ### Features
 
-- 📱  Responsive design
+- 📱 Responsive design
 - 🔥 [Next.js](https://nextjs.org) for Static Site Generator
 
 - 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
@@ -47,9 +47,9 @@ Open <http://localhost:3000> with your favorite browser to see your project.
 
 #### 2. Add your own content
 
- 1. **Content**: change the configuration in the ```src/config/index.json``` file to change the content of the landing page to match your use ```src/config/index.json```  folder and .
- 2. **Images**:  add any images/icons..etc to the ```public/assets/images```  folder and update their reference source in ```src/config/index.json```.
- 3. **Theme**:  to change the theme, update the ```tailwind.config.js```  file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
+1.  **Content**: change the configuration in the `src/config/index.json` file to change the content of the landing page to match your use `src/config/index.json` folder and .
+2.  **Images**: add any images/icons..etc to the `public/assets/images` folder and update their reference source in `src/config/index.json`.
+3.  **Theme**: to change the theme, update the `tailwind.config.js` file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
 
 #### 3. Deploy to production
 
@@ -59,7 +59,7 @@ Open <http://localhost:3000> with your favorite browser to see your project.
 
 You can see the results locally in production mode with:
 
-  ```
+```
 yarn build
 yarn start
 ```
@@ -71,4 +71,3 @@ You can create an optimised production build with:
 ```
 yarn build-prod
 ```
-  

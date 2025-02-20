@@ -77,7 +77,7 @@ const About = () => {
           </a>
         </div>
          */}
-         <div className="flex items-center mt-6">
+        <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
             &copy; {new Date().getFullYear()}
           </p>

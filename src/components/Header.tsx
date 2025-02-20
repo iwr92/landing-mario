@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Link } from "react-scroll";
-import config from "../config/index.json";
+import React, { useState } from 'react';
+
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Link } from 'react-scroll';
+
+import config from '../config/index.json';
 
 const Menu = () => {
   const { navigation, company } = config;
@@ -26,8 +28,15 @@ const Menu = () => {
 
           {/* Menú para móviles */}
           <div className="-mr-2 flex items-center md:hidden">
-            <button onClick={toggleMenu} className="p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none">
-              {isOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none"
+            >
+              {isOpen ? (
+                <XIcon className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
             </button>
           </div>
 
@@ -40,7 +49,12 @@ const Menu = () => {
                 smooth={true}
                 duration={1000}
                 className="text-gray-500 hover:text-gray-900 cursor-pointer"
-                style={ item.name === 'Contacto' && {fontWeight:'bold', color:'#4a759f'}}
+                style={
+                  item.name === 'Contacto' && {
+                    fontWeight: 'bold',
+                    color: '#4a759f',
+                  }
+                }
               >
                 {item.name}
               </Link>
@@ -67,7 +81,12 @@ const Menu = () => {
                 duration={1000}
                 className="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                 onClick={() => setIsOpen(false)}
-                style={ item.name === 'Contacto' && {fontWeight:'bold', color:'#4a759f'}}
+                style={
+                  item.name === 'Contacto' && {
+                    fontWeight: 'bold',
+                    color: '#4a759f',
+                  }
+                }
               >
                 {item.name}
               </Link>

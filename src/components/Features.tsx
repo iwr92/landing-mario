@@ -21,13 +21,20 @@ const Features = () => {
             {description}
           </p>
         </div>
-        <div style={{
-          display:'flex',
-          justifyContent:'center'
-        }}>
-          <img alt='sobre_mi' src={img} style={{
-            marginTop:40,
-          }} className='shadow-2xl rounded-2xl w-full lg:w-3/4 mx-auto'/>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            alt="sobre_mi"
+            src={img}
+            style={{
+              marginTop: 40,
+            }}
+            className="shadow-2xl rounded-2xl w-full lg:w-3/4 mx-auto"
+          />
         </div>
       </div>
     </div>
