@@ -8,7 +8,6 @@ export async function POST(req: Request) {
     const { name, email, message } = await req.json();
 
     // 🔹 Responde inmediatamente al cliente
-    // const response = NextResponse.json({ success: true }, { status: 200 });
 
     const response = new NextResponse(JSON.stringify({ success: true }), {
       status: 200,
@@ -30,6 +29,9 @@ export async function POST(req: Request) {
 
     return response;
   } catch (error) {
-    return NextResponse.json({ success: false, error: 'Error al procesar la solicitud' }, { status: 500 });
+    return new NextResponse(JSON.stringify({ success: false, error: 'Error al procesar la solicitud' }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
