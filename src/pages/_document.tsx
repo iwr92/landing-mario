@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { SessionProvider } from "next-auth/react";
 
 import { AppConfig } from '../utils/AppConfig';
 
@@ -9,8 +10,10 @@ class MyDocument extends Document {
       <Html lang={AppConfig.locale}>
         <Head />
         <body>
+        <SessionProvider>
           <Main />
           <NextScript />
+          </SessionProvider>
         </body>
       </Html>
     );
